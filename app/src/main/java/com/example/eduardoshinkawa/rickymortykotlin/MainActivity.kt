@@ -39,7 +39,7 @@ class MainActivity : AppCompatActivity() {
         val recyclerView = recyclerView_main
         recyclerView.adapter = MainAdapter(characters, this)
         val layoutManager = StaggeredGridLayoutManager(
-                2, StaggeredGridLayoutManager.VERTICAL)
+                1, StaggeredGridLayoutManager.VERTICAL)
         recyclerView.layoutManager = layoutManager
     }
 }

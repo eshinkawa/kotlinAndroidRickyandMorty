@@ -31,9 +31,11 @@ class MainAdapter(private val characters: Characters,
     class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
 
         fun bindView(character: CharacterRM) {
-            val title = itemView.profile_name_text
+            val title = itemView.profile_name
+            val desc = itemView.profile_desc
 
             title.text = character.name
+            desc.text = character.species
         }
 
     }
